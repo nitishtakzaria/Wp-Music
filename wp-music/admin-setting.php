@@ -58,10 +58,6 @@ if(isset($_POST['submit'])){
 					<label for="change_currency"><strong>Changing currency</strong></label>
 				</th>
 				<td>
-					<?php
-					$cp_set_duration = get_option('change_currency');
-					?>
-					<input type="text" name="cp_set_duration" id="cp_set_duration" required value="<?php echo $cp_set_duration; ?>">
 					<select name="change_currency" id="change_currency" required>
 						<option value="">Select</option>
 						<?php
