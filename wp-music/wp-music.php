@@ -8,6 +8,11 @@
  * Text Domain:       wpmusic
 */
 
+
+echo "hello";
+die;
+
+
 /*create db  for custom music meta box */
 include plugin_dir_path( __FILE__ ) . './custom-music-db.php';
 
