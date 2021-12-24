@@ -50,7 +50,7 @@ function show_music() {
 	
 	
 	while ( $loop->have_posts() ) : $loop->the_post();
-    $get_meta_results = $wpdb->get_results("SELECT `meta_key`,`meta_value` FROM `wp_custom_meta` WHERE `post_id` = ".get_the_ID()."" );
+    $get_meta_results = $wpdb->get_results("SELECT `meta_id`,`meta_key`,`meta_value` FROM `wp_custom_meta` WHERE `post_id` = ".get_the_ID()." ORDER BY meta_id ASC" );
     
 
 	$str .='<div class="entry-content">';
