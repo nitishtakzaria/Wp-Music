@@ -33,13 +33,7 @@ function custom_wpmusic_menu_page() {
 add_action( 'admin_menu', 'custom_wpmusic_menu_page' );
 
 /* code for show music by shortcode */
-function show_music($atts) {
-		
-		 extract(shortcode_atts(array(
-      			'year' => 1,
-      			'genre' => 1,
-      		), $atts));	
-		
+function show_music() {
 		$str .= '';
 		global $wpdb;
 		
